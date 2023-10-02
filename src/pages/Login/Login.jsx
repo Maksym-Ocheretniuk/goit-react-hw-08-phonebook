@@ -3,7 +3,7 @@ import { LoginForm } from 'components/LoginForm/LoginForm';
 export const Login = () => {
   return (
     <div>
-      <title>Login</title>
+      <title>LogIn</title>
       <LoginForm />
     </div>
   );
