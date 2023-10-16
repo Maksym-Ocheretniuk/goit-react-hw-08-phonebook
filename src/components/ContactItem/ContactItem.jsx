@@ -1,18 +1,18 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { deleteContact } from 'redux/operations';
+import { deleteContact } from 'redux/contacts/operations';
 
 import css from './ContactItem.module.css';
 
-const ContactItem = ({ contact }) => {
+export const ContactItem = ({ contact }) => {
   const dispatch = useDispatch();
 
   return (
     <li className={css.listItem} key={contact.id}>
-      <p>
+      <div>
         {contact.name}: <span>{contact.phone}</span>
-      </p>
+      </div>
       <button
         className={css.listBtn}
         type="button"
@@ -25,7 +25,11 @@ const ContactItem = ({ contact }) => {
 };
 
 ContactItem.propTypes = {
-  contact: PropTypes.object.isRequired,
+  contact: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    phone: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
-export default ContactItem;
+// export default ContactItem;

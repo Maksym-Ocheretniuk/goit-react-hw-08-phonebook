@@ -19,3 +19,7 @@ span {
   display: flex;
   justify-content: center;
 }
+
+.emptyMessage {
+  color: blue;
+}
