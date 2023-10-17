@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.title {
+  color: orangered;
+  font-weight: 500px;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.bgImage {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://e0.pxfuel.com/wallpapers/256/85/desktop-wallpaper-title-old-phone-technology-phone-book-old-all-i-need-a-phone-call-quote-ancient-books.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
