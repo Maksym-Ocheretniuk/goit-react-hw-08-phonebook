@@ -1,10 +1,12 @@
 import { RegisterForm } from 'components/RegisterForm/RegisterForm';
 
-export default function Register() {
+import css from './Register.module.css';
+
+export const Register = () => {
   return (
     <>
-      <h1>Registration</h1>
+      <h1 className={css.title}>Registration</h1>
       {<RegisterForm />}
     </>
   );
-}
+};
