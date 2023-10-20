@@ -72,35 +72,35 @@ export const ContactForm = () => {
       onSubmit={handleSubmit}
       validationSchema={schema}
     >
-      <Form className={css.form_wrapper}>
-        <label className={css.label}>
+      <Form className={css.formContainer}>
+        <label className={css.formLabel}>
           Name
-          <Field
-            className={css.input}
-            name="name"
-            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-          />
+          <div className={css.inputContainer}>
+            <Field
+              className={css.formInput}
+              name="name"
+              title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+            />
+          </div>
+          <ErrorMessage component="div" className={css.errorName} name="name" />
+        </label>
+        <label className={css.formLabel}>
+          Number
+          <div className={css.inputContainer}>
+            <Field
+              className={css.formInput}
+              name="number"
+              title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+            />
+          </div>
           <ErrorMessage
             component="div"
-            className={css.error_name}
-            name="name"
-          />
-        </label>
-        <label className={css.label}>
-          Number
-          <Field
-            className={css.input}
+            className={css.errorNumber}
             name="number"
-            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           />
         </label>
-        <ErrorMessage
-          component="div"
-          className={css.error_number}
-          name="number"
-        />
 
-        <button className={css.button_add} type="submit">
+        <button className={css.formButton} type="submit">
           Add
         </button>
       </Form>
