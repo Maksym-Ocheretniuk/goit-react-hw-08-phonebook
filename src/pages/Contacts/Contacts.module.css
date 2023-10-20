@@ -27,6 +27,7 @@
 .totalNumber {
   font-weight: 700;
   padding-right: 5px;
+  margin-left: 5px;
 
   color: #000000;
   background-color: rgb(200, 200, 62);
