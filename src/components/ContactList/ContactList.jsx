@@ -1,19 +1,15 @@
 import { useSelector } from 'react-redux';
 
 import {
-  // selectContacts,
-  // selectFilteredContacts,
-  // selectError,
   selectContactsCount,
   selectIsLoading,
   selectError,
 } from 'redux/contacts/selectors';
 import { ContactItem } from '../ContactItem/ContactItem';
 import { selectVisibleContacts } from 'redux/filter/selectors';
-// import Loader from '../Loader/Loader';
 import css from './ContactList.module.css';
 
-export function ContactList() {
+export const ContactList = () => {
   const count = useSelector(selectContactsCount);
   const filteredContacts = useSelector(selectVisibleContacts);
   const error = useSelector(selectError);
@@ -22,7 +18,7 @@ export function ContactList() {
   return (
     <ul className={css.listContainer}>
       {!count && isLoading && !error ? (
-        <p>Add your first contact.</p>
+        <p className={css.message}>Add your first contact.</p>
       ) : (
         filteredContacts.map(contact => (
           <ContactItem key={contact.id} contact={contact} />
@@ -30,6 +26,4 @@ export function ContactList() {
       )}
     </ul>
   );
-}
-
-// export default ContactList;
+};

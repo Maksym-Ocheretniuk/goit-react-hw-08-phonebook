@@ -6,20 +6,13 @@
   width: 350px;
   padding: 20px;
 
-  border-radius: 25px;
-  background-color: #a3a7f4;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid #8b6161;
+  border-radius: 10px;
+  background-color: rgb(52, 59, 67);
+
+  box-shadow: rgba(234, 221, 221, 0.645) 0px 5px 15px;
 }
 
-span {
-  margin-left: 15px;
-}
-
-.loaderWrap {
-  display: flex;
-  justify-content: center;
-}
-
-.emptyMessage {
-  color: blue;
+.message {
+  color: rgb(63, 135, 81);
 }

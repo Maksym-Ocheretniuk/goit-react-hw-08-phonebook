@@ -10,8 +10,8 @@ export const ContactItem = ({ contact }) => {
 
   return (
     <li className={css.listItem} key={contact.id}>
-      <div>
-        {contact.name}: <span>{contact.phone}</span>
+      <div className={css.contactContainer}>
+        {contact.name}: <span>{contact.number}</span>
       </div>
       <button
         className={css.listBtn}
@@ -31,5 +31,3 @@ ContactItem.propTypes = {
     phone: PropTypes.string.isRequired,
   }).isRequired,
 };
-
-// export default ContactItem;

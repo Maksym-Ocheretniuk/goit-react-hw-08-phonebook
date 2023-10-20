@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-// import { setFilter } from 'redux/filterSlice';
-// import { selectFilter } from 'redux/selectors';
+
 import { changeFilter } from 'redux/filter/filterSlice';
 import { selectFilter } from 'redux/filter/selectors';
 
@@ -30,5 +29,3 @@ export const Filter = () => {
     </div>
   );
 };
-
-// export default Filter;
