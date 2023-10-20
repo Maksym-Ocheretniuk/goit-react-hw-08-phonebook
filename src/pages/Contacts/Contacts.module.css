@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 100%;
+
+  padding: 10px 0;
+
+  color: orangered;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  margin: 20px 0;
+}
+
+.total {
+  font-weight: 500;
+}
+
+.totalNumber {
+  font-weight: 700;
+  padding-right: 5px;
+
+  color: #000000;
+  background-color: rgb(200, 200, 62);
+}
+
+.errorMessage {
+  margin-top: 50px;
+  color: red;
+  font-weight: 500;
+}
